@@ -1,0 +1,11 @@
+---
+image_name: openshift-httpd
+labels:
+  maintainer: 'chriswood.ca@gmail.com,jesse@weisner.ca'
+  alpine_version: '3.10'
+  httpd_version: '2.4.41'
+  httpd_apk_release: '0'
+suffixes:
+  - '2.4.41'
+  - '2.4'
+  - '2.4-latest'
