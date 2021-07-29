@@ -30,8 +30,8 @@ COPY info.php /application/joomla/info.php
 COPY php.ini /etc/php7/php.ini
 # RUN mkdir /var/log/apache
  
-RUN chown 0:0 /etc/apache2/vhost.d /config /run/apache2 /var/log/apache2 /application /var/log/
-RUN chmod 775 /etc/apache2/vhost.d /config /run/apache2 /var/log/apache2 /application /var/log/
+RUN chown 0:0 /etc/apache2/vhost.d /config /run/apache2 /var/log/apache2 /application/ /var/log/
+RUN chmod 775 /etc/apache2/vhost.d /config /run/apache2 /var/log/apache2 /application/ /var/log/
 RUN chmod 755 /usr/local/bin/httpd-foreground
 
 EXPOSE 80
