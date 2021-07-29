@@ -22,9 +22,10 @@ RUN apk add --no-cache  --repository http://dl-cdn.alpinelinux.org/alpine/latest
 RUN setcap CAP_NET_BIND_SERVICE=+eip /usr/sbin/httpd 
 RUN mkdir /etc/apache2/vhost.d /config /application
 
-RUN wget https://downloads.joomla.org/cms/joomla3/3-9-28/Joomla_3-9-28-Stable-Full_Package.zip
-RUN mkdir /application/joomla
-RUN unzip Joomla_3-9-28-Stable-Full_Package.zip -d /application/joomla
+#ONLY FOR INITIAL INSTALLATION
+#RUN wget https://downloads.joomla.org/cms/joomla3/3-9-28/Joomla_3-9-28-Stable-Full_Package.zip
+#RUN mkdir /application/joomla
+#RUN unzip Joomla_3-9-28-Stable-Full_Package.zip -d /application/joomla
 
 COPY info.php /application/joomla/info.php
 COPY php.ini /etc/php7/php.ini
