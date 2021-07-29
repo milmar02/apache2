@@ -27,7 +27,7 @@ RUN mkdir /etc/apache2/vhost.d /config /application
 #RUN mkdir /application/joomla
 #RUN unzip Joomla_3-9-28-Stable-Full_Package.zip -d /application/joomla
 
-COPY info.php /application/joomla/info.php
+#COPY info.php /application/joomla/info.php
 COPY php.ini /etc/php7/php.ini
 # RUN mkdir /var/log/apache
  
